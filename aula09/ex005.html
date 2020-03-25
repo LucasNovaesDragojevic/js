@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM</title>
+    <style>
+        body
+            {
+                background: rgb(68, 125, 199);
+                color: white;
+                font: normal 18pt Arial;
+            }
+    </style>
+</head>
+<body>
+    <h1>Primeira aula sobre DOM</h1>
+    <p>Primeira frase</p>
+    <p>Segunda frase da aula sobre <strong>DOM</strong></p>
+    <div id="clique">Clique em Mim</div>
+    <script>
+        // Substituindo conteúdo de div através de um seletor de tags e id
+        window.document.body.querySelector('div#clique').innerHTML = '<strong>olá</strong>'
+    </script>
+</body>
+</html>
